@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block titulo %}
+Bienvenido a eNe
+{% endblock %}
+
+{% block contenido %}
+<h1> Bienvenido a eNe </h1>
+<h1> "el Número escondido" </h1>
+	<br>
+	<h2>El juego consiste en adivinar un número escondido de cuatro cifras, estas no se pueden repetir.</h2>
+	<h2>Para comenzar a jugar a eNe tiene que haber un número escondido ingresado, de esta forma se genera una partida  </h2>
+	<h2>Luego podremos intentar adivinarlo, para eso haremos uso de los resultados que obtendremos al ir jugando </h2>
+	<h2>Los valores de los resultados son los siguientes:  </h2>
+	<h2>"CASI": la cifra es parte del número escondido pero no corresponde la ubicación </h2>
+	<h2>"NADA": la cifra no es parte del número escondido </h2>
+	<h2>"ACERTASTE": la cifra es parte del número escondido y corresponde la ubicación </h2>
+	<h2>El orden de los valores de los resultados puede o no coincidir con las cifras ingresadas  </h2>
+	<h2>Ejemplo: juego el '5216' y me arroja cómo resultado 'NADA-CASI-ACERTASTE-NADA', ACERTASTE quiere decir que hay una cifra que está en el número escondido, puede o no ser el 1  </h2>
+	<h2>Lo mismo con el valor CASI, puede ser o no el 2. Tenemos dos NADA, hay dos cifras que no están comprendidas en el número escondido, lo mismo, puede ser o no el 5, puede ser o no el 6 </h2>
+	<br>
+	<h4><i class="fas fa-user-secret"></i> {{ form.num_secreto }}</h4>
+	<br>
+
+
+
+	<h3><a href="{% url 'adivinar' %}"><i class="fas fa-dice"></i> Jugar a eNe </a></h3>
+	<br>
+	<h3><a href="{% url 'ingrese' %}"><i class="fas fa-key"></i> Ingresar número escondido manualmente</a></h3>
+	<br>
+	<h3><a href="{% url 'ingreseAuto' %}"><i class="fas fa-key"></i> Ingresar número escondido automáticamente</a></h3>
+
+
+{% endblock %}

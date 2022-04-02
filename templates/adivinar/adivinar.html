@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block titulo %}
+Jugando! Paso 1
+{% endblock %}
+
+{% block contenido %}
+<div class="container">
+	<h1><i class="fas fa-dice"></i> ADIVINAR NÚMERO ESCONDIDO</h1>
+	<br>
+	<br>
+	<form method="post">
+		{% csrf_token %}
+		 <div class="row">
+			<div class="col-md-1 col-md-offset-3">
+				<div class="form-group">
+					<label for="Numero 1">Primer cifra:</label>
+					<input class="form-control" type="number" name="nm1" placeholder="0-9">
+			   </div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-1 col-md-offset-3">
+				<div class="form-group">
+					<label for="Numero 2">Segunda cifra:</label>
+					<input class="form-control" type="number" name="nm2" placeholder="0-9">
+			   </div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-1 col-md-offset-3">
+				<div class="form-group">
+					<label for="Numero 3">Tercer cifra:</label>
+					<input class="form-control" type="number" name="nm3" placeholder="0-9">
+			   </div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-1 col-md-offset-3">
+				<div class="form-group">
+					<label for="Numero 4">Cuarta cifra:</label>
+					<input class="form-control" type="number" name="nm4" placeholder="0-9">
+			   </div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-1 col-md-offset-6">
+				<div class="form-group">
+					<br>
+					<br>
+					<h1>
+					<input class="btn btn-primary" type="submit" value="Aceptar">
+				</h1>
+			   </div>
+			</div>
+		</div>
+	</form>
+	</div>
+{% endblock %}
+

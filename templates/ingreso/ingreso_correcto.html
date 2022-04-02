@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block titulo %}
+Ingreso Correcto!
+{% endblock %}
+
+{% block contenido %}
+
+<div class="container">
+
+	<h1><i class="fas fa-check-circle"></i> Se ingresó número escondido correctamente</h1>
+    <br>
+    <br>
+    <h2> Partida número: {{ form }} </h2>
+    <br>
+    <h3> Se puede comenzar a jugar </h3>
+    <h3><a href="{% url 'index' %}"> Inicio </a></h3>
+
+{% endblock %}

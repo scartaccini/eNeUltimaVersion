@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block titulo %}
+Jugando! Paso 2
+{% endblock %}
+
+{% block contenido %}
+
+<div class="container">
+<h1>En juego </h1>
+
+
+	{% for clave,valor in form.items %}
+	<h4> {{ clave|upper }} : </h4>
+	<h5> {{ valor }}</h5>
+	{% endfor %}
+   
+
+<br>
+<br>
+<h3><a href="{% url 'adivinar' %}"><i class="fas fa-dice"></i> Siga intentando</a></h3>
+{% endblock %}

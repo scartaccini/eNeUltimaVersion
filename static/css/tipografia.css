@@ -1,0 +1,45 @@
+body {
+    padding-left: 15px;
+}
+
+h1 {
+    font-family: 'Fascinate';
+    text-align: center;
+    color: rgb(27, 71, 129);
+    font-size: 48pt;
+}
+
+h2 {
+    font-family: 'Cinzel';
+    text-align: center;
+    color: rgb(47, 129, 27);
+    font-size: 14pt;
+}
+
+h3 {
+    font-family: 'Fascinate';
+    text-align: center;
+    color: rgb(27, 71, 129);
+    font-size: 20pt;
+}
+
+h4 {
+    font-family: 'Fascinate';
+    text-align: center;
+    color: rgb(185, 177, 66);
+    font-size: 20pt;
+}
+
+h5 {
+    font-family: 'DotGothic16';
+    text-align: center;
+    color: rgb(3, 3, 3);
+    font-size: 20pt;
+}
+
+h6 {
+    font-family: 'Fascinate';
+    text-align: center;
+    color: rgb(40, 114, 63);
+    font-size: 20pt;
+}
